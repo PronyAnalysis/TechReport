@@ -1,5 +1,5 @@
 \section{Introduction}
-Consider a signals composition
+Consider a signal system
 $$
 \{ (a_j, x_j) \}
 $$
@@ -11,9 +11,12 @@ $$
 m_k = \sum_{j=1}^N a_j x_j^k.
 $$
   
-$\{m_k\}$ are moments of the signal compositions.
+$\{m_k\}$ are moments of the signal system.
+
+In the practical application, we usually know only moments of a source system and we want to reconstruct original amplitudes and positions of signals. This means that we should build the inverse Prony map. Unfortunately, measurements of moments frequently include some noise. A feature of the inverse Prony map is the following: even small noise can produce a significant reconstruction error. Therefore, it is very important to understand geometry of the Prony map and the inverse Prony map.
 
 See also: \cite{2015arXiv150206932A}
+  
   
   
   
