@@ -23,14 +23,11 @@ createModel <- function(s, labels, p0, surface.count=4, delta = 0.2) {
   )
   model$s1 <- s(model$x0, model$y0, model$z0)
   model$f <- Vectorize(function(x, y, z) dm(model, model$s1, s(x, y, z)))
-  model$points <- expand.grid(x = model$xs, y = model$ys, z = model$zs)
-  model$points$f <- model$f(model$points$x, model$points$y, model$points$z)
   model$colors <- rainbow(surface.count)
   model$surface.alpha <- 1 / surface.count
   model$draw <- function(model, to.file=T) {
     with(model, {
-      fs <- model$points$f
-      levels <- seq(min(fs), min(fs) + (max(fs) - min(fs))/4, length = surface.count+1)[-1]
+      levels <- seq(1.5, 7.5, length = surface.count)
       open3d(windowRect = c(-1000, 100, -500, 600))
       contour3d(f, levels, xs, ys, zs, color = colors, alpha = surface.alpha)
       box3d();
