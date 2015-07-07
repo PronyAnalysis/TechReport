@@ -1,0 +1,72 @@
+\subsection{General complex Prony, $N$D}
+
+Let's consider the following system:
+
+$$
+  m_k = \sum_{j=1}^N a_j x_j^k, \quad k \in \{0, 1, \ldots, 2N-1\}.
+$$
+
+Introduce variables $\{u_j\}$:
+
+$$
+  \begin{cases}
+    u_1 = x_1 + x_2 + \ldots + x_N, \\
+    u_2 = x_1x_2 + x_1x_3 + \ldots + x_{N-1}x_N, \\
+    \ldots \\
+    u_N = x_1x_2\ldots x_N.
+  \end{cases}
+$$
+
+From the Viet's theorem, we have:
+
+\begin{equation}
+  \label{eq3}
+  m_{l} = m_{l-1}u_1 - m_{l-2}u_2 + \ldots + (-1)^{N-1}m_{l-N} u_N.
+\end{equation}
+ 
+
+Thus, $\{u_j\}$ are solution of the following system of equations:
+
+$$
+  \begin{pmatrix}
+    m_{N-1} & -m_{N-2} & \ldots & (-1)^{N-1} m_0 \\
+    m_{N} & -m_{N-1} & \ldots & (-1)^{N-1} m_1 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    m_{2N-2} & -m_{2N-3} & \ldots & (-1)^{N-1} m_{N-1}
+  \end{pmatrix}
+  \times
+  \begin{pmatrix}
+    u_1 \\ u_2 \\ \vdots \\ u_N
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_N \\ m_{N+1} \\ \vdots \\ m_{2N-1} \\
+  \end{pmatrix}.
+$$
+
+We can find $\{x_j\}$ from the following equation:
+
+$$
+  x^N - u_1 x^{N-1} + \ldots + (-1)^N u_N = 0.
+$$
+
+
+We can find $\{a_j\}$ as a solution of the following system:
+
+$$
+  \begin{pmatrix}
+    1 & 1 & \ldots & 1 \\
+    x_1 & x_2 & \ldots & x_d \\
+    x_1^2 & x_2^2 & \ldots & x_N^2 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x_1^{N-1} & x_2^{N-1} & \ldots & x_N^{N-1} \\
+  \end{pmatrix}
+  \times
+  \begin{pmatrix}
+    a_1 \\ a_2 \\ a_3\\ \vdots \\ a_N
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_0 \\ m_1 \\ m_2 \\ \vdots \\ m_{N-1}
+  \end{pmatrix}.
+$$

@@ -1,0 +1,60 @@
+\subsection{Trigonometric real Prony, 2D}
+
+Consider the following system of signals: $S = \{ a, b, \mu, \nu \}$. We assume that we know the following $\{m_k\}$:
+
+\begin{equation}
+  \label{eq:TProny2D-mk}
+  m_k = 
+  U(k\delta) = 
+  a e^{-2\pi i \mu k \delta} + b e^{-2\pi i \nu k \delta} =
+  a (e^{-2\pi i \mu \delta})^k + b (e^{-2\pi i \nu \delta})^k, \quad
+  k = 0, 1, 2.
+\end{equation}
+
+Introduce
+
+$$
+  x = e^{-2\pi i \mu \delta}, \quad 
+  y = e^{-2\pi i \nu \delta}.
+$$
+
+Then the source system can be rewritten in the following form:
+
+$$
+  m_k = ax^k + by^k.
+$$
+
+The solution can be obtained from the following formulas:
+
+$$
+  M_k = |m_k|, \quad
+  \phi = -2\pi \mu \delta, \quad
+  \theta = -2\pi \nu \delta, \quad
+  \Delta = \phi - \theta,
+$$
+
+$$
+  \Delta = \arccos \Bigg( 
+    \dfrac{2 M_1^2 - M_0^2 - M_2^2}{2(M_0^2 - M_1^2)} 
+  \Bigg)
+$$
+
+$$
+  D = M_0^2 - 4\dfrac{(M_1^2 - M_0^2)^2}{M_2^2 + 3M_0^2 - 4M_1^2}
+$$
+
+$$
+  a = \dfrac{M_0 \pm \sqrt{D}}{2}, \quad 
+  b = \dfrac{M_0 \mp \sqrt{D}}{2}
+$$
+
+$$
+  \theta = -\arccos \Big( 
+    \dfrac
+      {\Re m_1 (a\cos\Delta + b) + \Im m_1 (a\sin\Delta)}
+      {(a\cos\Delta + b)^2 + (a\sin\Delta)^2} 
+  \Big), \quad
+  \phi = \theta + \Delta.
+$$
+
+  
