@@ -1,6 +1,7 @@
 Introduction.tex
 Prony 1D.tex
-figures/prony-1d-map2/prony-1d-map2.png
+figures/prony-1d-map/prony-1d-map.png
 
+  
   
   
