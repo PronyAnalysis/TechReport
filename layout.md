@@ -10,3 +10,4 @@ Prony 2D.tex
 figures/prony-2d-countour3d/prony-2d-countour3d.gif
 In_fact_here_you_can__.tex
 subsection_Trigonometric_noisy_real_Prony__.tex
+figures/prony-2d-noisy/prony-2d-noisy.png
