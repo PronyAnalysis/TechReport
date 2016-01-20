@@ -11,3 +11,14 @@ figures/prony-2d-countour3d/prony-2d-countour3d.gif
 Numerical_Prony2D_TrigonometricReal2.tex
 Numerical_Prony2D_TrigonometricRealNoisy.tex
 figures/prony-2d-noisy/prony-2d-noisy.png
+Numerical_Prony2D_Geometry.tex
+figures/prony-2d-geometry/plot2d-h0.025.png
+figures/prony-2d-geometry/plot3d-h0.025.png
+figures/prony-2d-geometry/plot2d-h0.05.png
+figures/prony-2d-geometry/plot3d-h0.05.png
+figures/prony-2d-geometry/plot2d-h0.1.png
+figures/prony-2d-geometry/plot3d-h0.1.png
+figures/prony-2d-geometry/plot2d-h0.2.png
+figures/prony-2d-geometry/plot3d-h0.2.png
+figures/prony-2d-geometry/plot2d-h0.4.png
+figures/prony-2d-geometry/plot3d-h0.4.png
