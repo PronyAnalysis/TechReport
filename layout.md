@@ -22,3 +22,4 @@ figures/prony-2d-geometry/plot2d-h0.2.png
 figures/prony-2d-geometry/plot3d-h0.2.png
 figures/prony-2d-geometry/plot2d-h0.4.png
 figures/prony-2d-geometry/plot3d-h0.4.png
+figures/fig/fig.png
